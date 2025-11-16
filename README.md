@@ -154,6 +154,61 @@ Here is the clean, scannable version of the full plan:
 | 42  | Final Review    | Mega Test             |
 
 ---
+# 🏛️ **Project Structure**
+
+js-complete-mastery/
+│
+├── Day-01/
+│   ├── Main-Topic-Name/             # Main topic overview (1 page)
+│   │   ├── theory.md                # Full explanation, examples, diagrams
+│   │   ├── practice/                # Questions based on difficulty levels
+│   │   │   ├── easy.md
+│   │   │   ├── medium.md
+│   │   │   └── hard.md
+│   │   └── solutions/               # Solutions based on difficulty levels
+│   │       ├── easy.md
+│   │       ├── medium.md
+│   │       └── hard.md
+│   │
+│   ├── Small-Topic-Name/            # Small topic overview (1 page)
+│   │   ├── theory.md
+│   │   ├── practice/
+│   │   │   ├── easy.md
+│   │   │   ├── medium.md
+│   │   │   └── hard.md
+│   │   └── solutions/
+│   │       ├── easy.md
+│   │       ├── medium.md
+│   │       └── hard.md
+│
+├── Day-02/
+│   ├── Main-Topic-Name/
+│   │   ├── theory.md
+│   │   ├── practice/
+│   │   │   ├── easy.md
+│   │   │   ├── medium.md
+│   │   │   └── hard.md
+│   │   └── solutions/
+│   │       ├── easy.md
+│   │       ├── medium.md
+│   │       └── hard.md
+│   │
+│   ├── Small-Topic-Name/
+│   │   ├── theory.md
+│   │   ├── practice/
+│   │   │   ├── easy.md
+│   │   │   ├── medium.md
+│   │   │   └── hard.md
+│   │   └── solutions/
+│   │       ├── easy.md
+│   │       ├── medium.md
+│   │       └── hard.md
+│
+│  …and so on for all days (Day-03 → Day-42)
+│
+└── README.md                        # Overview + instructions for the repo
+
+---
 
 # 🧠 **Practice Problems**
 
