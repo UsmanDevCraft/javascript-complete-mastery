@@ -159,54 +159,29 @@ Here is the clean, scannable version of the full plan:
 js-complete-mastery/
 │
 ├── Day-01/
-│   ├── Main-Topic-Name/             # Main topic overview (1 page)
-│   │   ├── theory.md                # Full explanation, examples, diagrams
-│   │   ├── practice/                # Questions based on difficulty levels
-│   │   │   ├── easy.md
-│   │   │   ├── medium.md
-│   │   │   └── hard.md
-│   │   └── solutions/               # Solutions based on difficulty levels
+│   ├── Topic-01/
+│   │   ├── theory.md
+│   │   └── practice/
 │   │       ├── easy.md
 │   │       ├── medium.md
 │   │       └── hard.md
 │   │
-│   ├── Small-Topic-Name/            # Small topic overview (1 page)
+│   ├── Topic-02/
 │   │   ├── theory.md
-│   │   ├── practice/
-│   │   │   ├── easy.md
-│   │   │   ├── medium.md
-│   │   │   └── hard.md
-│   │   └── solutions/
+│   │   └── practice/
 │   │       ├── easy.md
 │   │       ├── medium.md
 │   │       └── hard.md
 │
-├── Day-02/
-│   ├── Main-Topic-Name/
-│   │   ├── theory.md
-│   │   ├── practice/
-│   │   │   ├── easy.md
-│   │   │   ├── medium.md
-│   │   │   └── hard.md
-│   │   └── solutions/
-│   │       ├── easy.md
-│   │       ├── medium.md
-│   │       └── hard.md
-│   │
-│   ├── Small-Topic-Name/
-│   │   ├── theory.md
-│   │   ├── practice/
-│   │   │   ├── easy.md
-│   │   │   ├── medium.md
-│   │   │   └── hard.md
-│   │   └── solutions/
-│   │       ├── easy.md
-│   │       ├── medium.md
-│   │       └── hard.md
-│
-│  …and so on for all days (Day-03 → Day-42)
-│
-└── README.md                        # Overview + instructions for the repo
+└── README.md
+
+Each day contains **maximum 2 topics**, each with:
+
+- `theory.md` — detailed explanation, examples, diagrams  
+- `practice/` — difficulty-based problem sets  
+  - `easy.md`  
+  - `medium.md`  
+  - `hard.md`  
 
 ---
 
@@ -227,6 +202,14 @@ Each file includes:
 * test cases
 * optimal solution
 * alternative solution
+
+---
+
+## 🚀 How to Use This Repository
+
+1. Start with `theory.md` for each topic  
+2. Attempt practice problems (Easy → Medium → Hard)  
+3. Move to the next topic/day only after completing all levels 
 
 ---
 
