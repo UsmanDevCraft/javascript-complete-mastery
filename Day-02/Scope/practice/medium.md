@@ -1,8 +1,8 @@
-# ✅ **MEDIUM (3 Problems)**
+# ✅ **MEDIUM (Scope — 3 Problems)**
 
 ---
 
-### **4) Function Scope (var)**
+### **Problem 4 — Function Scope (var) Output?**
 
 ```js
 function test() {
@@ -16,12 +16,17 @@ function test() {
 test();
 ```
 
-✔ What will be logged?
-✔ Why does this happen?
+### **Solution:**
+
+```
+Ali
+```
+
+`var` ignores block scope; it reassigns the same variable.
 
 ---
 
-### **5) Block Scope (let) inside function**
+### **Problem 5 — Block Scope Shadowing Output?**
 
 ```js
 function demo() {
@@ -38,11 +43,18 @@ function demo() {
 demo();
 ```
 
-✔ Explain both outputs.
+### **Solution:**
+
+```
+2
+1
+```
+
+The inner `count` shadows the outer one.
 
 ---
 
-### **6) Lexical Scope Example**
+### **Problem 6 — Lexical Scope Output?**
 
 ```js
 let msg = "hello";
@@ -60,7 +72,12 @@ function outer() {
 outer();
 ```
 
-✔ What will be printed?
-✔ Which `msg` does inner() use and why?
+### **Solution:**
+
+```
+outer msg
+```
+
+Inner function uses the variable from where it was **defined**, not where it was called.
 
 ---

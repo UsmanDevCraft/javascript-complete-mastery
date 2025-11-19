@@ -1,8 +1,8 @@
-# ✅ **HARD (4 Problems)**
+# ✅ **HARD (Scope — 4 Problems)**
 
 ---
 
-### **7) Trick with Hoisting + var + Function Scope**
+### **Problem 7 — Hoisting + Function Scope Output?**
 
 ```js
 console.log(a);
@@ -18,18 +18,26 @@ show();
 console.log(a);
 ```
 
-✔ Predict all outputs step-by-step.
-✔ Understand hoisting inside a function.
+### **Solution:**
+
+```
+undefined
+undefined
+10
+20
+```
+
+Inside `show()`, `var a` is hoisted and initialized as `undefined`.
 
 ---
 
-### **8) Block Scope + Closures**
+### **Problem 8 — let + Closures Output?**
 
 ```js
 let funcs = [];
 
 for (let i = 0; i < 3; i++) {
-  funcs.push(function() {
+  funcs.push(function () {
     console.log(i);
   });
 }
@@ -39,11 +47,19 @@ funcs[1]();
 funcs[2]();
 ```
 
-✔ Predict output and explain why each function logs the correct value.
+### **Solution:**
+
+```
+0
+1
+2
+```
+
+Each loop iteration creates a new `i` because of block-scoped `let`.
 
 ---
 
-### **9) Scope Shadowing**
+### **Problem 9 — Shadowing + TDZ Output?**
 
 ```js
 let value = 100;
@@ -59,12 +75,19 @@ function calc() {
 calc();
 ```
 
-✔ Will this run or throw an error?
-✔ Explain why (hint: TDZ + shadowing).
+### **Solution:**
+
+Error:
+
+```
+ReferenceError: Cannot access 'value' before initialization
+```
+
+Inner `value` shadows global `value`, but it's in TDZ before initialization.
 
 ---
 
-### **10) Scope Chain with nested functions**
+### **Problem 10 — Scope Chain Output?**
 
 ```js
 let x = 1;
@@ -88,7 +111,12 @@ function a() {
 a();
 ```
 
-✔ Which `x` does function `c` use and why?
-✔ Explain using lexical scope + scope chain.
+### **Solution:**
+
+```
+3
+```
+
+Function `c` finds `x` in its nearest lexical scope (inside `b()`).
 
 ---

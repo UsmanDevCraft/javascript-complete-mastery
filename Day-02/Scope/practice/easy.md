@@ -1,8 +1,8 @@
-# ✅ **EASY (3 Problems)**
+# ✅ **EASY (Scope — 3 Problems)**
 
 ---
 
-### **1) What will be the output? (Global Scope)**
+### **Problem 1 — Global Scope Output?**
 
 ```js
 let x = 10;
@@ -15,11 +15,18 @@ print();
 console.log(x);
 ```
 
-✔ Identify if any errors occur and write the outputs.
+### **Solution:**
+
+```
+10
+10
+```
+
+Because `x` is global, accessible everywhere.
 
 ---
 
-### **2) Block Scope with let**
+### **Problem 2 — Block Scope Output?**
 
 ```js
 if (true) {
@@ -29,17 +36,31 @@ if (true) {
 console.log(a);
 ```
 
-✔ Will it print `5` or error? Why?
+### **Solution:**
+
+Error:
+
+```
+ReferenceError: a is not defined
+```
+
+`let` is block-scoped; `a` exists only inside `{}`.
 
 ---
 
-### **3) var vs let in loops**
+### **Problem 3 — var Loop Output?**
 
 ```js
 for (var i = 1; i <= 3; i++) {}
 console.log(i);
 ```
 
-✔ Predict the output.
+### **Solution:**
+
+```
+4
+```
+
+`var` is function-scoped, not block-scoped.
 
 ---
