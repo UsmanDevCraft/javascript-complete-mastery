@@ -156,6 +156,7 @@ Here is the clean, scannable version of the full plan:
 ---
 # 🏛️ **Project Structure**
 
+```plaintext
 js-complete-mastery/
 │
 ├── Day-01/
@@ -174,6 +175,7 @@ js-complete-mastery/
 │   │       └── hard.md
 │
 └── README.md
+```
 
 Each day contains **maximum 2 topics**, each with:
 
